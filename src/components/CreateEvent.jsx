@@ -45,7 +45,7 @@ export default function CreateEvent() {
     }
 // rgb(255, 64, 132)
     return (
-      <>
+      <div>
         <Form
           className="BebasNeue createFormCard container-fluid mb-5"
           onSubmit={handleSubmit}
@@ -229,17 +229,16 @@ export default function CreateEvent() {
               />
             </Form.Group>
           </Row>
-
-          <Button
-            variant="outline-light"
-            style={{ color: "rgb(255,64,132)" }}
-            size="lg"
-            type="submit"
-            className="mb-3"
-          >
-            next
-          </Button>
+            <Button
+              variant="outline-light"
+              style={{ color: "rgb(255,64,132)" }}
+              size="lg"
+              type="submit"
+              className="mb-3"
+            >
+              next
+            </Button>
         </Form>
-      </>
+      </div>
     )
   }
