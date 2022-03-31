@@ -16,7 +16,7 @@ function ProfileEvents({userInfo}) {
     return (
       <>
         <div  key={`attendinglist-${idx}`} className='cardContainer'>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', color:'white' }}>
               
             <Card.Img variant="top" src={event.image} />
             <Card.Body>
