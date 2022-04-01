@@ -4,6 +4,7 @@ import axios from "axios";
 import { Card } from "react-bootstrap";
 let accessToken =
   "pk.eyJ1IjoidHJpc3RvbnBhbGFjaW9zIiwiYSI6ImNsMWF5bXJwZTJheDIzbHYwMnMzZnZucmcifQ.dZGAzZPAmn39U28QyzwPVQ";
+  
 
 const geolocateStyle = {
   float: "left",
