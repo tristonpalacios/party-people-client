@@ -2,6 +2,9 @@ import { useRef, useEffect, useState } from "react";
 import ReactMapGl, { Marker, GeolocateControl } from "react-map-gl";
 import axios from "axios";
 import { Card } from "react-bootstrap";
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
+import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
+
 let accessToken =
   "pk.eyJ1IjoidHJpc3RvbnBhbGFjaW9zIiwiYSI6ImNsMWF5bXJwZTJheDIzbHYwMnMzZnZucmcifQ.dZGAzZPAmn39U28QyzwPVQ";
   
@@ -59,7 +62,7 @@ export default function Map({ details }) {
                 }
                 onMove={(evt) => setViewPort(evt.viewState)}
                 style={{ width: 500, height: 400 }}
-                mapStyle="mapbox://styles/mapbox/streets-v9"
+                mapStyle="mapbox://styles/mapbox/streets-v11"
               >
                 <GeolocateControl
                   style={geolocateStyle}
