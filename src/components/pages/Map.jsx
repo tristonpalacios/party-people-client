@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import ReactMapGl, { Marker, GeolocateControl } from "react-map-gl";
 import axios from "axios";
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
+import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
+mapboxgl.workerClass = MapboxWorker;
 
 const geolocateStyle = {
   float: "left",
